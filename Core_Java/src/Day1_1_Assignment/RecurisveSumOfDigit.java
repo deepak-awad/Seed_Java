@@ -7,23 +7,22 @@ public class RecurisveSumOfDigit {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Enter a number");
+		long a, digit,sum_digit;
 		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
-		
-		int sum =0,rem,new1=0;
-		
-		while(num > 0)
-		{
-			rem = num % 10;
-		    sum = sum + rem;
-		    num = num / 10;
-		    
-		    rem =sum %10;
-			new1 = new1 +rem;
+		System.out.print("Enter the integer value : ");
+		a= sc.nextLong();
+		System.out.println();
+	 do{
+		 sum_digit = 0; 
+         while (a != 0) {
+             digit = a % 10;
+             sum_digit = sum_digit+digit;
+             a = a / 10;		
 		}
-		
-		System.out.println("The recursive sum of digit is:"+new1);
+		a=sum_digit;
+		}while(a>9);
+		System.out.println(a);
+
 	}
 
 }
