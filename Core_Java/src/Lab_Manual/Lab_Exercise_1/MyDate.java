@@ -1,9 +1,9 @@
-package Lab_Maual;
+package Lab_Manual.Lab_Exercise_1;
 
-/*** Lab Manual 1 - Lab Exercise 1 ***/
+/*** Problem statement 1: Construct a class with MyDate which has attributes- day, month, year. and use initDate method to print date.   ***/
+
 
 public class MyDate {
-	
 	int day;
 	int month;
 	int year;
@@ -27,5 +27,4 @@ public class MyDate {
 		d1.printDate();
 
 	}
-
 }
