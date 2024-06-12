@@ -20,7 +20,4 @@ public class Airthmetic {
 	{
 		System.out.println("The addition is:"+(d+l));
 	}
-	
-	
-
 }
