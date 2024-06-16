@@ -91,7 +91,6 @@ public class Book {
             System.out.println("3. Display All Book Details");
             System.out.println("4. Display Book Details of a Given Author");
             System.out.println("5. Display Book Details by Book ID");
-            System.out.println("6. Exit");
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
             
@@ -172,14 +171,15 @@ public class Book {
             	System.out.println("All Book Details are:");
             	for(Book b : book)
             	{
-            		if( b == null)
-            		{
-            			System.out.println("Book are not available");
-            		}
-            		else
+            		if( b != null)
             		{
             			b.display();
 	                    System.out.println();
+            		
+            		}
+            		else
+            		{
+	                    System.out.println("Books are not availabe");
 	                    break;
             		}
             	}

@@ -45,6 +45,11 @@ public class Toolbooth {
 		t1.payingCars();
 		t1.nopayCar();
 		t1.display();
+		
+		Toolbooth t2 = new Toolbooth();
+		t2.payingCars();
+		t2.nopayCar();
+		t2.display();
 
 	}
 
