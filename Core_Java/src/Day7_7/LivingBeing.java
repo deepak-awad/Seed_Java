@@ -6,10 +6,13 @@ public class LivingBeing {
 
 	public static void main(String[] args) {
 		
-		Tiger t1 = new Tiger();
-		t1.eat();
-		Elephant e1 = new Elephant();
-		e1.eat();
+		Animal a = new Animal();
+		
+		a= new Elephant();
+		a.eat();
+		
+		a = new Tiger();
+		a.eat();
 
 	}
 

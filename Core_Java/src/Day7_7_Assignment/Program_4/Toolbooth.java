@@ -1,4 +1,5 @@
 package Day7_7_Assignment.Program_4;
+import java.util.Scanner;
 
 /***  Imagine a tollbooth at a bridge. Cars passing by the booth are
 expected to pay a 50 Rs. toll. Mostly they do, but sometimes a car goes by
@@ -42,14 +43,18 @@ public class Toolbooth {
 	public static void main(String[] args) {
 		
 		Toolbooth t1 = new Toolbooth();
+		
+		System.out.println("Enter no of cars to pass:");
+		Scanner sc = new Scanner(System.in);
+		int n1 = sc.nextInt();
+		
+		for(int i=0;i<n1;i++)
+		{
 		t1.payingCars();
 		t1.nopayCar();
 		t1.display();
+		}
 		
-		Toolbooth t2 = new Toolbooth();
-		t2.payingCars();
-		t2.nopayCar();
-		t2.display();
 
 	}
 
