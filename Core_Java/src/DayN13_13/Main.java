@@ -12,8 +12,6 @@ public class Main {
 	public static void main(String[] args) {
 		Gen<Integer> g = new Gen<>(new Integer(10));
 		data(g);
-		
 
 	}
-
 }
