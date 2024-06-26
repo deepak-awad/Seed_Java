@@ -7,21 +7,27 @@ import java.io.*;
 public class FileDemo {
 	
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args)  {
 		
-		FileInputStream str =null;
-		try
-		{
-			 str = new FileInputStream("Hello.text");
-			
-			
-		}catch(Exception e)
-		{
-			System.out.println("File not found");
-		}finally
-		{
-			str.close();
-		}
+		FileInputStream str = null;
+        try {
+            str = new FileInputStream("file.txt"); 
+            
+        } catch (FileNotFoundException e) 
+        {
+            System.out.println("File not found: " + e.getMessage());
+        } 
+        finally {
+            try {
+                if (str != null) 
+                {
+                    str.close(); 
+                }
+            } catch (IOException e) 
+            {
+                System.out.println("Error closing file: " + e.getMessage());
+            }
+        }
 
 	}
 
