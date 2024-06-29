@@ -31,7 +31,7 @@ public class Account {
 		balance =0.0;
 		city = null;
 	}
-	public Account(String name, double balance, String city)
+	private Account(String name, double balance, String city)
 	{
 		this.account_number = ++count;
 		this.customer_name = name;
