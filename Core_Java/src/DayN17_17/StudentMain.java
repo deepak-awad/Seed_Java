@@ -1,7 +1,7 @@
 package DayN17_17;
 import java.util.*;
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Comparator; 
 
 public class StudentMain {
 
@@ -12,11 +12,11 @@ public class StudentMain {
 		s.add(new Student(2,"depak",25000.0));
 		s.add(new Student(3,"yash",50000.0));
 
-		Collections.sort(s ,Comparator.comparing(Student :: getName) );
+		 Collections.sort(s, Comparator.comparingDouble(Student::getSalary));
 		
 		for(Student s1 : s)
 		{
-			System.out.println(" "+ s1.name);
+			System.out.println(" "+ s1.bal);
 		}
 	
 	}

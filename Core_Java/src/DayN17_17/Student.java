@@ -2,7 +2,7 @@ package DayN17_17;
 
 /*** Student class ***/
 
-public class Student {
+public class Student implements Comparable<Student> {
 	
 	int id;
 	String name;
@@ -31,6 +31,17 @@ public class Student {
 
     public double getSalary() {
         return bal;
+    }
+    
+    public int compareTo(Student s)
+    {
+    	double s1 = this.bal;
+    	double s2  = s.bal;
+    	if(s1 > s2)
+    	return 1;
+    	else if(s1 < s2)
+    		return -1;
+    	return 0;
     }
 
 
