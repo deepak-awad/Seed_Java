@@ -7,7 +7,7 @@ class EvenThread extends Thread
     
    	if(Thread.currentThread().getName().equals("even"))
      {
-    	for(int i=1;i<=100;i++)
+    	for(int i=1;i<=500;i++)
     	   	{	
     		Thread.yield();
     	   	  if(i%2==0)	
@@ -23,7 +23,7 @@ class OddThread extends Thread
    {
 	if(Thread.currentThread().getName().equals("odd")) 
 	{
-	  for(int j=1;j<=100;j++)
+	  for(int j=1;j<=500;j++)
        {
 		  try {
 			this.join(100);
